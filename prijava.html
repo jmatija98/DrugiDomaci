@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Povoljan i kvalitetan veb dizajn">
+    <meta name="author" content="Matija Jovic">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>ErasmusPlus | Prijava</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="brand">
+                <h1><span class="highlight">Erasmus</span>Plus</h1>
+            </div>
+
+            <div class="toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <nav>
+                <ul id="check-class">
+                    <li ><a href="kontakt.html">Kontakt</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li class="current" ><a href="prijava.html">Prijavi se</a></li>
+                    <li ><a href="index.html">Pocetna</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="reg">
+        <div class="container">
+            <h3>Nemas profil? <br>Registruj se besplatno</h3>
+            <form id="f" onsubmit="return validacija()" action="#">
+                <label><i class="far fa-id-badge"></i>Ime i prezime:</label><br>
+                <input type="text" placeholder="Npr. Matija Jovic" id="ime"><br>
+                <label><i class="fas fa-calendar-alt"></i>Datum rodjenja:</label><br>
+                <input type="date"><br>
+                <label><i class="fas fa-envelope"></i>E-mail:</label><br>
+                <input type="email" placeholder="example@gmail.com" id="email"><br>
+                <label><i class="fas fa-venus-mars"></i>Pol:</label><br>
+                <input class="rad" type="radio" name="gender" checked> Male<br>
+                <input class="rad" type="radio" name="gender"> Female<br>
+                <input class="rad" type="radio" name="gender"> Other<br>
+                <label><i class="far fa-question-circle"></i>Motivacija za prijavu</label><br>
+                <textarea cols="30" rows="10" placeholder="Minimum 100 reci" id="txt"></textarea><br>
+                <button type="submit" class="button_2">Submit</button>
+            </form>
+            <h2><strong>Tutorijal za popunjavanje formalne aplikacije</strong></h2>
+            <video class="yt" src="images/application.mp4" controls poster="images/tutorial.jpg"></video>
+            
+        </div>
+    </section>
+
+   
+
+    <footer>
+        <p>Studenti Fona, Copyright &copy; 2020</p>
+        <img src="images/erasmus-logo.png" alt="">
+    </footer>
+    <script src="./js/meniFunkcija.js" charset="utf-8"></script>
+    <script src="./js/validacijaFunkcija.js" charset="utf-8"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Povoljan i kvalitetan veb dizajn">
+    <meta name="author" content="Matija Jovic">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>ErasmusPlus | Pocetna</title>
+    <script src="js/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container"> 
+            <div class="brand">
+                <h1><span class="highlight">Erasmus</span>Plus</h1>
+            </div>
+            <div class="toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav>
+                <ul id="check-class">
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="prijava.html">Prijavi se</a></li>
+                    <li class="current"><a href="index.html">Pocetna</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            <h1 id="timer"></h1>
+        </div>
+    </section>
+
+
+    <section id="boxes">
+        <div class="container">
+            <div class="box">
+                <img src="images/contract.png">
+                <h3>Ostvarivanje medjunarodnih kontakata</h3>
+                <p>
+                    Jedna od najvecih prednosti ovog programa jeste ostvarivanje kontakata koji mogu biti znacajni u buducnosti. Upoznavanje ljudi sirom sveta i stvaranje novih prijateljstava. Ovo je savrsena prilika da upoznas nove kulture, ali i da predstavis svoju u najboljem mogucem svetlu!
+                </p>
+            </div>
+
+            <div class="box">
+                    <img src="images/planet-earth.png">
+                    <h3>Prilika za putovanja</h3>
+                    <p>
+                        Pored samog studiranja, najznacajniji element ovog programa jeste upoznavanje i same zemlje u kojoj cete ziveti. Ovo je savrsena prilika da upoznas i obidjes gradove i zemlje o kojima mozda nisi ni sanjao! Zato iskoristi priliku i prijavi se!
+                    </p>
+            </div>
+
+            <div class="box">
+                    <img src="images/studying.png">
+                    <h3>Obrazovanje na modernim evropskim univerzitetima</h3>
+                    <p>
+                        Ovo je savrsena prilika da steknes obrazovanje na skroz drugacijim univerzitetima. Ovakvo iskustvo moze biti presudno za tvoju buducnost i naredni nivo studija. Pored toga, to moze biti odlicna referenca za tvoj CV kojom ces se izdvojiti. Savrsena prilika da steknes sasvim drugacije iskustvo.
+                    </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Studenti Fona, Copyright &copy; 2020</p>
+        <img src="images/erasmus-logo.png" alt="">
+        <div class="dim">
+        </div>
+    </footer>
+
+    <script>
+        (function( $ ){     
+   var navOffset = jQuery("header").offset().top; 
+   jQuery(window).scroll(function() {
+       var scrollPos = jQuery(window).scrollTop();
+        if (scrollPos >= navOffset) {
+            jQuery("header").addClass("fixed");
+        } else {
+            jQuery("header").removeClass("fixed");
+        }
+    });
+    })(jQuery);
+    </script>
+
+    <script src="./js/meniFunkcija.js" charset="utf-8"></script>
+    <script src="./js/resizeFunkcija.js" charset="utf-8"></script>
+    <script src="./js/tajmer.js" charset="utf-8"></script>
+</body>
+</html>
